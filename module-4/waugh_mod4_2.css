@@ -1,0 +1,13 @@
+html,body{background-color:#ddf;max-height:100vh;margin:0}
+h1,h3,figure{text-align:center}
+#image-gallery{margin-top:10vh;margin-left:8px;display:grid;grid-template-columns:30% 30% 30%}/*Using 10% made margin-top too large*/
+figcaption{font-size:0.75em;font-style:italic}
+h1,h3{background-color:#bbe}
+h1{margin:0;padding:0}
+h3{margin-top:0}
+img{height:300px;max-height:35vh}
+#footer{width:100%;position:fixed;bottom:0;left:0}
+#footer a{float:right;margin-bottom:20px;margin-right:1px}
+a{text-decoration:none}
+a:hover{text-decoration:underline}
+#image-gallery div{border:solid 1px #556;border-collapse:collapse}
