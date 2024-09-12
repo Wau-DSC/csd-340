@@ -1,0 +1,14 @@
+html,body{background-color:#eef;margin:0;padding:0}
+header{color:#fff;background-color:#66e;text-align:center;padding:20px;margin:0}
+h1{font-weight:400}
+#navbar{overflow:hidden;background-color:#79f;border-bottom:solid 1px #44c}
+#navbar a{float:left;display:block;color:#cfe;text-align:center;text-decoration:none;padding:14px 16px}
+#navbar a:hover{background-color:#55e;color:#fff}
+#container{margin:2% 5% 100px 5%;padding:10px}
+.card{box-shadow:0 4px 8px 0 rgba(0,0,0,0.2)}
+footer{background-color:#66e;position:fixed;left:0;bottom:0;width:100%}
+footer a{float:right;color:#cfe;text-decoration:none;font-style:italic;font-weight:400}
+footer a:hover{color:#fff;text-decoration:underline}
+table{border-collapse:collapse;width:100%;margin-bottom:30px}
+table th{text-align:left;padding-top:12px;padding-bottom:12px}
+table td{border:solid 1px #ddd;padding:8px}
