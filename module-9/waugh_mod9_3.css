@@ -1,0 +1,11 @@
+html,body{font-size:16px;background-color:#eef}
+p{font-weight:400/*Isn't this already the default?*/;line-height:1.4em}
+h1{font-weight:700;text-transform:uppercase;width:100%;text-align:center}
+h2{font-weight:700;padding-top:15px}
+address{width:100%;text-align:center}
+address a{font-weight:bold;font-size:1.25em;text-decoration:none;color:#4f3674}
+address a:visited{color:#5d4773}
+address a:hover{text-decoration:underline #543c78;background-color:#d6a800}/*Don't like this background color here*/
+address a:hover:visited{text-decoration:underline #604878}
+.intro{text-indent:2em}
+.sentence{font-style:italic}
