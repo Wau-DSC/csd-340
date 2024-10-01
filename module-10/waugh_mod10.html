@@ -34,9 +34,10 @@ function redraw(){
  redraw();
  canvas.onmouseover=canvas.onmouseout=function(){
    for(var i=0;i<27;i++){
-     if(Math.random()<0.2){
+     var j=Math.random();
+     if(j<0.2){
        num[i]=Math.max(0,num[i]-1)
-     }else if(Math.random()<0.2){
+     }else if(j<0.4){
        num[i]=Math.min(12,num[i]+1)
      }
    }

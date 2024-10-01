@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>CSD 340 Web Development with HTML and CSS</title>
+ <style>
+  html,body{background-color:#dde}
+ </style>
+</head>
+<body>
+<h1>Assignment 11.2 Javascript Part 3</h1>
+<p>Interactive To-Do List</p>
+<form>
+<input type="text" id="text-inpt"/>
+<button onclick="add()">Add</button>
+<button onclick="deleteLast()" id="delete" disabled="true">Delete Last Entry</button>
+<button onclick="display()">Display</button>
+</form>
+<div id="output"></div>
+<script>
+var list=[];
+function add(){
+  var val=document.getElementById("text-inpt").value;
+  alert(val+" added at index "+list.length);
+  list.push(val);
+  document.getElementById("delete").disabled=false;
+  document.getElementById("output").innerHTML="";
+}
+function deleteLast(){
+  alert("Deleted "+list.pop());
+  if(list.length==0)document.getElementById("delete").disabled=true;
+  document.getElementById("output").innerHTML="";
+}
+function display(){
+  var x=0;
+  var st="";
+  for(var val of list){
+    st+="Item "+(++x)+" : "+val+"<br/>";
+  }
+  document.getElementById("output").innerHTML=st;
+}
+</script>
+</body>
+</html>
