@@ -1,0 +1,12 @@
+html,body{background-color:#eef}
+h1{text-align:center}
+.column{display:inline-block;width:45%;vertical-align:top;border-radius:15px}
+.column:first-of-type{border:solid 1px #a00}
+.column:nth-of-type(2){border:dashed 1px #a00}
+#footer{width:100%;position:fixed;bottom:0;left:0}/*using margin-top pushed it out of the browser frame*/
+#footer a{float:right;margin-bottom:20px;margin-right:1px}
+h3{font-weight:500}
+li{font-weight:300}
+ul,ol{padding:10px;list-style-position:inside}
+a{text-decoration:none}
+a:hover{text-decoration:underline}

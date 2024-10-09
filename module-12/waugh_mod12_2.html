@@ -1,40 +1,48 @@
 <!DOCTYPE html>
-<!--AUTHOR J. Waugh CSD 340-->
 <html>
 <head>
 <title>CSD 340 Web Development with HTML and CSS</title>
-<style>
-html,body{background-color:#dde}
-#output{border-left:solid 2px #aab;background-color:#eef}
-footer{background-color:#99b;position:fixed;left:0;bottom:0;width:100%}
-footer a{float:right;margin-right:8px;color:#cdf;text-decoration:none;font-style:italic;font-weight:400}
-footer a:hover{color:#fff;text-decoration:underline}
-</style>
+<link rel="stylesheet" href="waugh_mod12_2.css"/>
 </head>
 <body>
-<h1>Assignment 12.2 Javascript Part 4</h1>
-<h2>Top <i>n</i> books(?)</h2>
-<ul id="output"></ul>
+<div id="container">
+<h1 style="text-align:center">Assignment 12.2 Javascript Part 4</h1>
+<div><button onclick="showA()">Top to Bottom</button><button onclick="showD()">Bottom to Top</button></div>
+<div class="column">
+<h3>Top 10 Books</h3>
+<ul id ="books">
+</ul>
+</div>
+<div class="column">
+<h3>Things I've Learned Since The Course Started</h3>
+<ul>
+ <li>Think</li>
+ <li>Thing</li>
+ <li>Thing</li>
+ <li>Thing</li>
+ <li>Thing</li>
+</ul>
 <script>
-var array="abcdefghij".split("");
-function displayA(){
+var arr="ABCDEFGHIJ".split("");
+function showA(){
  var s="";
  for(var i=0;i<10;i++){
-   s+="<li>"+array[i]+"</li>"
+  s+="<li> Book "+arr[i]+"</li>";
  }
- document.getElementById("output").innerHTML=s;
+ document.getElementById("books").innerHTML=s;
 }
-function displayD(){
+function showD(){
  var s="";
  for(var i=9;i>=0;i--){
-   s+="<li>"+array[i]+"</li>"
+  s+="<li> Book "+arr[i]+"</li>";
  }
- document.getElementById("output").innerHTML=s;
+ document.getElementById("books").innerHTML=s;
 }
+showA();
 </script>
-<button onclick="displayA()">Top to Bottom</button><button onclick="displayD()">Bottom to Top</button>
-<footer>
-<a href="../index.html">Back to Index</a>
-</footer>
+</div>
+<div id="footer">
+ <a href="../index.html">Back to Index</a>
+</div>
 </body>
 </html>
